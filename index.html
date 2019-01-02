@@ -14,16 +14,16 @@
     <!-- A-Frame の VR空間に AR.js を紐づける（デバッグUIは非表示） -->
     <a-scene embedded arjs="debugUIEnabled:false;">
         <a-assets>
-            <!-- <a-asset-item id="otohime" src="otohime.glb"></a-asset-item>  -->
-            <img id="otohime" src="omesis_pickup.png"></img>
+            <a-asset-item id="otohime" src="./otohime2.gltf"></a-asset-item>  
+            <!--<img id="otohime" src="omesis_pickup.png"></img>-->
         </a-assets>
 
       <!-- マーカーを登録（プリセットされている「hiro」マーカー） -->
       <a-marker preset="hiro">
         <!-- マーカーの場所に箱を置く（見やすいようにワイヤーフレーム表示）
         <a-box position="0 0.5 0" wireframe="true"></a-box> -->
-        <!-- <a-entity gltf-model="#otohime" play-all-model-animations="" rotation="90 0 0" scale="50 50 50" position="0 0 0"></a-entity> -->
-        <a-image width="1000" height="1400" src="#otohime" scale="10 10 10" position="0 0 0"></a-image>
+        <a-entity gltf-model="#otohime" play-all-model-animations="" rotation="90 0 0" scale="50 50 50" position="0 0 0"></a-entity>
+        <!--<a-image width="1000" height="1400" src="#otohime" scale="10 10 10" position="0 0 0"></a-image>-->
       </a-marker>
 
       <!-- AR用のカメラを置く -->
